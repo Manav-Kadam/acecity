@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --first: #4b39ef;
+    --secondary: #edf2fa;
+}
+
+* {
+  font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background: #d7d7d7;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+  padding: 2rem 10%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1.5rem 3%;
+    background: none;
+    width: 100vw;
+}
+
+header .logo {
+    width: 38%;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header .navbar ul li {
+    margin: 0 1.5rem;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header .navbar ul li a:hover {
+    color: var(--first);
+}
+
+header #menu {
+    font-size: 4rem;
+    color: var(--first);
+    cursor: pointer;
+    display: none;
+}
+
+header.header-active {
+    height: 10vh;
+    background: #122;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .3);
+}
+header.header-active .logo{
+  width: 38%;
+}
+
+.began{
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 0 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.began:hover{
+  color: #fff;
+  background: var(--first);
+}
+.sign,.hero-1 a{
+  background-color: var(--first);
+  border: none;
+  padding: 1rem 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.sign:hover,.hero-1 a:hover{
+  background-color: #3124a1;
+}
+
+
+#home{
+  background: linear-gradient(135deg, hsla(246, 85%, 58%, 1) 0%, hsla(10, 61%, 65%, 1) 100%);
+  height: 130vh;
+  box-shadow: inset 0rem -10rem 6rem -5rem #000;
+overflow-y: hidden;
+z-index: 10;
+overflow-x: hidden;
+}
+.partition{
+  display: grid;
+  grid-gap: 75px;
+  grid-template-columns: 0.8fr 1.2fr;
+  margin-top: 5%;
+  max-height: 120vh;
+  z-index: -10;
+}
+.partition .img img{
+  width: 130%;
+  z-index: -40;
+  }
+.partition .text h1{
+  margin-top: 45%;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2%;
+}
+.partition .text h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-right:10%;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 10%;
+}
+.partition .text a{
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+padding: 1.4rem 2rem;
+background-color: #31bfae;
+border-radius: 1rem;
+}
+.partition .text a:hover{
+  color: #000;
+}
+
+
+#develop,#feature{
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+#develop h1,#feature h1{
+  color: #31bfae;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+#develop h2,#feature h2{
+  font-size: 4.2rem;
+  text-align: left;
+  margin-bottom: 1%;
+}
+#develop h3,#feature h3{
+  text-align: left;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  font-weight: 600;
+  margin-bottom: 3%;
+  margin-right: 35%;
+}
+#develop img{
+  width: 80%;
+}
+
+#tarlav,#build{
+  background: var(--first);
+  padding: 0 30%  3% 30%;
+  height: auto;
+  color: #fff;
+}
+#tarlav img{
+  float: left;
+  width: 18%;
+  margin-right: 5%;
+  margin-top: 13%;
+  margin-bottom: 5%;
+}
+
+#tarlav h1{
+font-size: 2.2rem;
+padding-top: 8%;
+margin-bottom: 2%;
+}
+
+#tarlav h2{
+color: #31bfae;
+font-size: 1.7rem;
+font-weight: 500;
+margin-bottom: 2%;
+}
+
+#tarlav h3{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+#feature{
+  padding-bottom: 4%;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  min-height: 60vh;
+}
+.card{
+  position: relative;
+  padding: 8%;
+  border-radius: 1rem;
+  text-align: left;
+}
+.card img{
+  width: 90%;
+}
+.card1{
+  background: var(--first);
+}
+.card2{
+  background: #ee8b60;
+}
+.card3{
+  background: #31bfae;
+}
+.card1 img{
+  position: absolute;
+  right: 0;
+  top: 6%;
+}
+.card2 img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 6%;
+}
+.card3 img{
+  position: absolute;
+  left: 0;
+  top: 6%;
+}
+.card h4{
+font-size: 3.5rem;
+margin-top: 130%;
+margin-bottom: 2%;
+}
+.card1 h4{
+  margin-top: 135%;
+}
+
+.card h5{
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 2.5rem
+}
+
+
+#build{
+  text-align: center;
+}
+
+#build h1{
+  padding-top: 8%;
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+#build h2{
+  margin-bottom: 5%;
+}
+
+.btn1{
+  font-size: 1.7rem;
+  font-weight: 600;
+  background: #3124a1;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  margin-right: 3%;
+}
+.btn2{
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--first);
+  background: #fff;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+}
+.btn2:hover{
+  color: #fff;
+  background: #3124a1;
+}
+.btn1:hover{
+  color: var(--first);
+  background: #fff;
+}
+
+
+
+
+
+
+
+.footer{
+  background:#0e0e2d;
+  text-align: center;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#fff;
+  text-transform: capitalize;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+  text-transform: capitalize;
+}
+
+.footer .box-container .box a:hover{
+  color:var(--first);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:var(--first);
+}
+
+
+
+
+
+@media(max-width:1200px){
+  #home{
+    height: 100vh;
+  }
+  #tarlav img{
+    margin-bottom: 15%;
+    margin-top: 17%;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+
+    header .logo{
+      width: 35%;
+    }
+    header .logo img{
+      width: 50%;
+    }
+    header #menu{
+        display: block;
+        color: #fff;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:-100rem; left: 0;
+        width: 100%;
+        opacity: 0;
+        background:#f7fafb;
+        border-top: .1rem solid rgba(0,0,0,.3);
+        transition: all 0.5s;
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem 0;
+    }
+
+    header .navbar ul li{
+        margin:1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        color: #405364;
+        display: block;
+    }
+
+    header .navbar.nav-toggle{
+        top:8rem;
+        opacity: 1;
+    }
+
+.partition{
+  grid-template-columns: 1fr 1fr;
+}
+#tarlav{
+  padding: 0% 20% 3% 20%;
+}
+#tarlav img{
+  width: 20%;
+  margin-top: 12%;
+}
+
+  }
+
+@media(max-width:751px){
+  .partition{
+    grid-template-columns: 1fr;
+  }
+  .partition .text h1{
+    margin-top: 10%;
+  }
+  .partition .img img{
+    width: 100%;
+  }
+  #tarlav,#build{
+    padding: 0% 15% 3% 15%;
+  }
+  #tarlav img{
+    width: 25%;
+  }
+  .cards{
+  grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width:550px) {
+  header .logo,
+  header.header-active .logo {
+    width: 50%;
+  }
+#tarlav img{
+  float:none;
+  margin-top:10%;
+  margin-bottom: 0;
+}
+#tarlav{
+  text-align: center;
+}
+#feature h3{
+  margin-right: 0;
+}
+#build h1{
+  padding-top: 10%;
+  margin-bottom: 2%;
+}
+#build h2{
+  margin-bottom: 10%;
+}
+#build{
+  padding-bottom: 10%;
+}
+html{
+  font-size: 45%;
+}
+}
